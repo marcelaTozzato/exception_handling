@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.59" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.45"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Error_Handling" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="XKT-84-rKh">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="GPx-zy-7n2">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="409"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Phy-5V-ZSP">
+                                                <rect key="frame" x="0.0" y="0.0" width="207" height="409"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="75"/>
+                                                <state key="normal" title="❌"/>
+                                                <connections>
+                                                    <action selector="didTapTrap" destination="BYZ-38-t0r" eventType="touchUpInside" id="xiL-oO-e7I"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8P6-9h-ZDK">
+                                                <rect key="frame" x="207" y="0.0" width="207" height="409"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="75"/>
+                                                <state key="normal" title="❔"/>
+                                                <connections>
+                                                    <action selector="didTapOptional" destination="BYZ-38-t0r" eventType="touchUpInside" id="D1W-xY-22G"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="oy9-Jx-lCo">
+                                        <rect key="frame" x="0.0" y="409" width="414" height="409"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HF8-zU-1wR">
+                                                <rect key="frame" x="0.0" y="0.0" width="207" height="409"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="75"/>
+                                                <state key="normal" title="📡"/>
+                                                <connections>
+                                                    <action selector="didTapNetworking" destination="BYZ-38-t0r" eventType="touchUpInside" id="iYt-Ox-AQb"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RBD-Qz-cGn">
+                                                <rect key="frame" x="207" y="0.0" width="207" height="409"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="75"/>
+                                                <state key="normal" title="💾"/>
+                                                <connections>
+                                                    <action selector="didTapSave" destination="BYZ-38-t0r" eventType="touchUpInside" id="fOT-48-AN7"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="XKT-84-rKh" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="KpB-J9-BTu"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="XKT-84-rKh" secondAttribute="bottom" id="XLo-Nw-OER"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="XKT-84-rKh" secondAttribute="trailing" id="cIU-xI-r31"/>
+                            <constraint firstItem="XKT-84-rKh" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="vV9-uL-6Kc"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="137.94642857142856"/>
+        </scene>
+    </scenes>
+</document>
